@@ -117,3 +117,31 @@ body {
   border: none;
   border-radius: 6px;
 }
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12px;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #555;
+  text-align: center;
+}
+
+.bottom-nav span {
+  display: block;
+  font-size: 11px;
+}
+
+body {
+  padding-bottom: 70px; /* tránh che nội dung */
+}
