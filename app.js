@@ -72,3 +72,9 @@ function exportExcel() {
 
   XLSX.writeFile(wb, "chi-tieu.xlsx");
 }
+function formatDateVN(dateStr) {
+  const d = new Date(dateStr);
+  const day = d.getDate();
+  const month = d.getMonth() + 1;
+  return `${day}-thg${month}`;
+}
