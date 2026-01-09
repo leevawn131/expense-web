@@ -29,7 +29,7 @@ function addExpense(title, amount, date = today()) {
 }
 function highlightMenu() {
   const path = location.pathname.split("/").pop();
-  document.querySelectorAll(".bottom-nav a").forEach(a => {
+  document.querySelectorAll(".top-nav .nav-item").forEach(a => {
     if (a.getAttribute("href") === path) {
       a.classList.add("active");
     }
