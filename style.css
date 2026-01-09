@@ -159,3 +159,21 @@ body {
 body {
   padding-bottom: 110px;        /* né menu */
 }
+.fab {
+  position: fixed;
+  bottom: 110px;
+  right: 20px;
+
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+
+  background: #007aff;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  line-height: 64px;
+  text-decoration: none;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
