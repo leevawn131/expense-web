@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quản lý chi tiêu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Quản lý chi tiêu</h1>
+
+  <form id="expense-form">
+    <input type="text" id="title" placeholder="Nội dung" required />
+    <input type="number" id="amount" placeholder="Số tiền" required />
+    <button type="submit">Thêm</button>
+  </form>
+
+  <h3 id="total">Tổng: 0 đ</h3>
+  <ul id="list"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
