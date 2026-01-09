@@ -117,48 +117,46 @@ body {
   border: none;
   border-radius: 6px;
 }
-.bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.top-nav {
+  position: sticky;
+  top: 0;
 
-  height: 88px;                 /* RẤT TO */
+  height: 72px;
   background: #ffffffee;
   backdrop-filter: blur(10px);
 
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
 
-  border-top: 1px solid #ccc;
-  z-index: 9999;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
 }
 
-.bottom-nav a {
-  flex: 1;
-  text-align: center;
+.top-nav .nav-item {
   text-decoration: none;
-  color: #444;
-
-  font-size: 28px;              /* ICON SIÊU TO */
-  line-height: 1;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
 }
 
-.bottom-nav a span {
-  display: block;
-  font-size: 14px;              /* chữ to */
-  margin-top: 6px;
+.top-nav .nav-item.nav-add {
+  font-size: 32px;
+  color: #007aff;
+  font-weight: bold;
 }
 
-.bottom-nav a.active {
+.top-nav .nav-item.active {
   color: #007aff;
   font-weight: 600;
 }
 
+/* tránh che nội dung */
 body {
-  padding-bottom: 150px;        /* né menu */
+  margin: 0;
+  padding-top: 80px;
 }
+
 .fab {
   position: fixed;
   bottom: 110px;
