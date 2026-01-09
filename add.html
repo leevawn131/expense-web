@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thêm chi tiêu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="back">←</a>
+  <h2>Thêm chi tiêu</h2>
+</header>
+
+<form class="form" id="add-form">
+  <label>
+    Nội dung
+    <input type="text" id="title" required>
+  </label>
+
+  <label>
+    Số tiền
+    <input type="number" id="amount" required>
+  </label>
+
+  <label>
+    Ngày
+    <input type="date" id="date">
+  </label>
+
+  <button class="save">Lưu</button>
+</form>
+
+<script src="app.js"></script>
+<script src="add.js"></script>
+</body>
+</html>
