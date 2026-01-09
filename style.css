@@ -122,24 +122,42 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px;
-  background: #fff;
+
+  height: 76px;               /* TO HƠN */
+  background: #ffffff;
   border-top: 1px solid #ddd;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 12px;
+
+  font-size: 16px;            /* chữ to */
+  z-index: 1000;
 }
 
 .bottom-nav a {
+  flex: 1;
   text-decoration: none;
   color: #555;
   text-align: center;
+  padding: 8px 0;
 }
 
-.bottom-nav span {
+.bottom-nav a span {
   display: block;
-  font-size: 11px;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* icon */
+.bottom-nav a {
+  font-size: 24px;            /* ICON TO */
+}
+
+/* tab đang active */
+.bottom-nav a.active {
+  color: #007aff;
+  font-weight: bold;
 }
 
 body {
