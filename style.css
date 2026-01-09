@@ -123,43 +123,39 @@ body {
   left: 0;
   right: 0;
 
-  height: 76px;               /* TO HƠN */
-  background: #ffffff;
-  border-top: 1px solid #ddd;
+  height: 88px;                 /* RẤT TO */
+  background: #ffffffee;
+  backdrop-filter: blur(10px);
 
   display: flex;
   justify-content: space-around;
   align-items: center;
 
-  font-size: 16px;            /* chữ to */
-  z-index: 1000;
+  border-top: 1px solid #ccc;
+  z-index: 9999;
 }
 
 .bottom-nav a {
   flex: 1;
-  text-decoration: none;
-  color: #555;
   text-align: center;
-  padding: 8px 0;
+  text-decoration: none;
+  color: #444;
+
+  font-size: 28px;              /* ICON SIÊU TO */
+  line-height: 1;
 }
 
 .bottom-nav a span {
   display: block;
-  font-size: 13px;
-  margin-top: 4px;
+  font-size: 14px;              /* chữ to */
+  margin-top: 6px;
 }
 
-/* icon */
-.bottom-nav a {
-  font-size: 24px;            /* ICON TO */
-}
-
-/* tab đang active */
 .bottom-nav a.active {
   color: #007aff;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 body {
-  padding-bottom: 90px; /* tránh che nội dung */
+  padding-bottom: 110px;        /* né menu */
 }
