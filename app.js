@@ -27,3 +27,14 @@ function addExpense(title, amount, date = today()) {
   });
   saveExpenses(expenses);
 }
+function highlightMenu() {
+  const path = location.pathname.split("/").pop();
+  document.querySelectorAll(".bottom-nav a").forEach(a => {
+    if (a.getAttribute("href") === path) {
+      a.style.color = "#007aff";
+      a.style.fontWeight = "bold";
+    }
+  });
+}
+
+highlightMenu();
